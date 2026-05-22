@@ -1,0 +1,41 @@
+{
+  "_comment": "Full reference for ~/.claude/settings.json after applying cogsec-hardening. Adapt to your environment.",
+  "env": {
+    "API_TIMEOUT_MS": "3000000",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "0",
+    "ENABLE_TOOL_SEARCH": "true"
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$HOME/.claude/hooks/log-tool-call.js\""
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [],
+    "deny": [
+      "Read(**/.env*)",
+      "Read(~/.ssh/**)",
+      "Read(~/.aws/**)",
+      "Read(~/.gnupg/**)",
+      "Write(**/.env*)",
+      "Write(~/.ssh/**)",
+      "Write(~/.aws/**)",
+      "Write(~/.gnupg/**)",
+      "Bash(curl * | bash)",
+      "Bash(wget * | bash)",
+      "Bash(ssh *)",
+      "Bash(scp *)",
+      "Bash(nc *)"
+    ]
+  },
+  "autoApproveTools": false,
+  "autoUpdatesChannel": "latest"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cogsec-hardening",
+  "version": "0.1.0",
+  "displayName": "claude-cogsec (Claude Code Cognitive Security)",
+  "description": "claude-cogsec — Cognitive Security hardening pack for Claude Code. Derived from the cogsec / affaan-m guides (https://github.com/affaan-m/ECC#the-guides). Covers token optimization, memory persistence, evaluation, parallelization, and agentic security (CVEs, sandboxing, sanitization, AgentShield). Includes PostToolUse observability hook, deny-list templates, and the /cogsec-audit slash command.",
+  "author": {
+    "name": "felimet",
+    "email": "felimet.jia.ming@gmail.com"
+  },
+  "homepage": "https://github.com/felimet/claude-cogsec",
+  "repository": "https://github.com/felimet/claude-cogsec",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "security",
+    "cogsec",
+    "agentic-security",
+    "observability",
+    "hooks",
+    "rules",
+    "token-optimization",
+    "memory-persistence",
+    "evaluation",
+    "parallelization"
+  ]
+}
