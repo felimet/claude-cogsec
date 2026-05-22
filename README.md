@@ -61,7 +61,7 @@ Then proceed to install `claude-cogsec` below.
 ### Option A - plugin marketplace
 
 ```bash
-claude /plugin marketplace add github:felimet/claude-cogsec
+claude /plugin marketplace add felimet/claude-cogsec
 claude /plugin install cogsec-hardening@claude-cogsec
 ```
 
