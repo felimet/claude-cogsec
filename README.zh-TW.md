@@ -61,7 +61,7 @@ ECC 就緒後再進行下方的 `claude-cogsec` 安裝。
 ### 方式 A — plugin marketplace
 
 ```bash
-claude /plugin marketplace add github:felimet/claude-cogsec
+claude /plugin marketplace add felimet/claude-cogsec
 claude /plugin install cogsec-hardening@claude-cogsec
 ```
 
